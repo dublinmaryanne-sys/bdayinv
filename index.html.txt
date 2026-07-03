@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deng's Birthday Invitation</title>
+
+<style>
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  z-index: 9999;
+}
+</style>
+</head>
+<body>
+
+<audio id="music" loop>
+  <source src="tayo-ay-magsayawan.mp3" type="audio/mpeg">
+</audio>
+
+<iframe src="https://dengbirthdayinvitation.my.canva.site"></iframe>
+
+<button onclick="startMusic()">🎵 Play Music</button>
+
+<script>
+function startMusic() {
+  document.getElementById("music").play();
+}
+</script>
+
+</body>
+</html>
